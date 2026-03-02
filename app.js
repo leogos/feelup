@@ -265,6 +265,8 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem(THEME_KEY, isDark ? "dark" : "light");
 });
 
-createQuestionFields();
-applySavedTheme();
-renderEntries();
+document.addEventListener("DOMContentLoaded", () => {
+  createQuestionFields();
+  applySavedTheme();
+  renderEntries();
+});
