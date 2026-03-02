@@ -50,6 +50,7 @@ h2,
 h3,
 p {
     margin: 0 auto;
+    color: var(--text)
 }
 
 
@@ -153,9 +154,12 @@ select:focus-visible {
 .entry-dialog label {
     display: block;
     font-weight: 700;
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--text)
+}
+
+.composer label {
+    font-size: 1.5rem;
 }
 
 input,
@@ -250,6 +254,7 @@ select {
 
 .helper {
     margin-top: 0.5rem;
+    margin-bottom: 36px;
     color: var(--muted);
 }
 
