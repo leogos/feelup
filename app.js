@@ -13,18 +13,18 @@ const questions = [
 
 const statuses = {
   dikkat: {
-    label: "DİKKAT",
+    label: "🔴 DİKKAT",
     range: [10, 24],
     text: `Genel iyilik hali düşük görünüyor. Enerji, motivasyon veya duygusal denge alanında zorlanmalar yaşıyor olabilirsin. Bu durum bir yetersizlik göstergesi değil; sisteminin dinlenme ve yeniden düzenlenme ihtiyacına işaret edebilir.
 
 Şu anda öncelik performans değil, toparlanma olabilir.
 
 Öneriler:
-- Beklentilerini bilinçli olarak azalt.
-- Uyku ve fiziksel ihtiyaçlarını gözden geçir.
-- Yapılacaklar listesini sadeleştir.
-- Kendine karşı daha şefkatli bir iç dil kullan.
-- Küçük ve güvenli alanlar yarat (kısa yürüyüş, sessiz zaman, destek mesajı).
+- Beklentilerini ayarla
+- Uyku ve fiziksel ihtiyaçlarını gözden geçir
+- Yapılacaklar listesini sadeleştir
+- Kendine karşı daha şefkatli bir iç dil kullan
+- Küçük ve güvenli alanlar yarat (kısa yürüyüş, sessiz zaman, destek mesajı)
 
 Bu dönem ilerlemekten çok dengeyi yeniden kurma alanı olabilir.`,
   },
@@ -36,10 +36,10 @@ Bu dönem ilerlemekten çok dengeyi yeniden kurma alanı olabilir.`,
 Bu aralık sürdürülebilir denge alanıdır.
 
 Öneriler:
-- Küçük keyif aktiviteleri planla.
-- Mini ve tamamlanabilir hedefler belirle.
-- İyi giden şeyleri bilinçli olarak fark et.
-- Enerji artıran rutinleri sabitle.
+- Küçük keyif aktiviteler planla
+- Mini ve tamamlanabilir hedefler belirle
+- İyi giden şeylere odaklan
+- Enerji artıran rutinleri sürdür
 
 Küçük dokunuşlar genel dengeyi güçlendirebilir.`,
   },
@@ -57,7 +57,7 @@ Değerlendirebileceklerin:
 - Uzun vadeli planlama yapmak
 - Başkasına destek olmak
 
-Bu seviyede yalnızca iyi hissetmek değil, aynı zamanda ilerlemek de mümkün.`,
+Bu seviyede yalnızca iyi hissetmek değil aynı zamanda ilerlemek de mümkün.`,
   },
 };
 
