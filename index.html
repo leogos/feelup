@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeelUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="app__header">
+        <div>
+          <h1>FeelUP</h1>
+          <p>Günlük hissiyatını kaydet, ilerlemeni takip et.</p>
+        </div>
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          type="button"
+          aria-label="Temayı değiştir"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true"
+            >dark_mode</span
+          >
+        </button>
+      </header>
+
+      <section class="composer">
+        <label for="entryTitle">Bugünün girişi</label>
+        <div class="composer__row">
+          <input
+            id="entryTitle"
+            type="text"
+            placeholder="Bugün nasılsın?"
+            maxlength="120"
+          />
+          <button
+            id="openFormBtn"
+            class="icon-btn icon-btn--primary"
+            type="button"
+            aria-label="Yeni entry ekle"
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >add</span
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="stats" id="overallContainer">
+        <h2>Son 7 entry ortalaması</h2>
+        <p id="overallStatus">Lütfen günlük hissiyatınızı belirtin!</p>
+      </section>
+
+      <section>
+        <h2>Entryler</h2>
+        <p id="emptyState" class="empty-state">
+          Lütfen günlük hissiyatınızı belirtin!
+        </p>
+        <ul id="entryList" class="entry-list" aria-live="polite"></ul>
+      </section>
+    </div>
+
+    <dialog id="entryDialog" class="entry-dialog">
+      <form id="entryForm" method="dialog">
+        <h2>Günlük Hissiyat Formu</h2>
+        <p class="helper">
+          Aşağıdaki maddeleri 1 (çok düşük) ile 5 (çok yüksek) arasında
+          puanlayın.
+        </p>
+
+        <div id="questionContainer" class="question-list"></div>
+
+        <menu class="dialog-actions">
+          <button type="button" id="cancelBtn" class="btn">Vazgeç</button>
+          <button type="submit" class="btn btn--primary">Kaydet</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
