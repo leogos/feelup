@@ -59,7 +59,7 @@ p {
 .entry-line {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 0.75rem;
 }
 
@@ -87,10 +87,17 @@ p {
 }
 
 .icon-btn {
-    width: 44px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
     display: grid;
     place-items: center;
+    font-size: 1.05rem;
+}
+
+.btn {
+    min-height: 48px;
+    padding: 0.75rem 1.1rem;
+    font-weight: 600;
 }
 
 .icon-btn--primary,
@@ -264,6 +271,10 @@ select {
     grid-template-columns: 1fr 80px;
     align-items: center;
     gap: 0.7rem;
+}
+
+.question-item label {
+    color: var(--text);
 }
 
 .dialog-actions {
