@@ -42,15 +42,16 @@ body {
 .app {
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1rem 3rem;
+    padding: 2rem 2rem 3rem;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+    margin: 0 auto;
 }
+
 
 .app__header,
 .composer__row,
@@ -59,7 +60,7 @@ p {
 .entry-line {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.75rem;
 }
 
@@ -140,7 +141,8 @@ select:focus-visible {
 .composer,
 .stats {
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .stats {
@@ -150,8 +152,10 @@ select:focus-visible {
 .composer label,
 .entry-dialog label {
     display: block;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--text)
 }
 
 input,
