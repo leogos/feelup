@@ -161,7 +161,11 @@ function renderEntries() {
 
     li.innerHTML = `
       <div class="entry-line">
-        <p class="entry-title"><span class="material-symbols-outlined" aria-hidden="true">check_box</span> [Gün ${index + 1}]: Hissiyat Puanı: <span class="entry-score">${entry.score}</span></p>
+        <p class="entry-title">
+          <span class="material-symbols-outlined" aria-hidden="true">check_box</span>
+          [${index + 1}] Puan: <span class="entry-score">${entry.score}</span>
+        </p>
+        <p class="entry-timestamp">${entry.timestamp}</p>
         <button type="button" class="icon-btn delete-btn" data-delete-id="${entry.id}" aria-label="Entry sil">
           <span class="material-symbols-outlined" aria-hidden="true">delete</span>
         </button>
@@ -225,11 +229,15 @@ entryForm.addEventListener("submit", (event) => {
   const noteValue =
     questionContainer.querySelector("#journalNote")?.value.trim() || "";
 
+  const now = new Date();
+  const timestamp = now.toLocaleDateString();
+
   entries.push({
     id: crypto.randomUUID(),
     title: titleInput.value.trim() || "Bugünkü hissiyat",
     score: total,
     note: noteValue,
+    timestamp,
   });
 
   saveEntries();

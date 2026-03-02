@@ -218,7 +218,6 @@ select {
     color: var(--muted);
     line-height: 1.5;
     margin-top: 0.4rem;
-    white-space: pre-line;
 }
 
 .entry-item .optional-note {
