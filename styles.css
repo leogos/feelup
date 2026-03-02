@@ -42,7 +42,7 @@ body {
 .app {
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 1.4rem 3rem;
 }
 
 h1,
@@ -288,4 +288,8 @@ select {
 .dialog-actions {
     margin-top: 0.8rem;
     padding: 0;
+}
+.entry-timestamp {
+    font-size: 0.8rem;
+    color: #555;
 }
